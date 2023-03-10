@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}   
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculadora{
+    margin: 10%;
+    border: black 1 px solid;
+    /* CSS Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(165, 95, 95);
+   
+
+    width: 50%;
+    height: 50%;
+
+}
+/*  Organização dos Botões */
+
+/* linha 1-5 */
+.calculadora_display{
+grid-column-start: 1;
+grid-column-end:5;
+grid-row-start: 1;
+grid-row-end: 5;
+}
+
+/* linha 5-6 */
+
+.clear  { grid-row-start:5;grid-row-end: 6;
+          grid-column-start:1 ;grid-column-end:2 ; }
+.operador-plus   { grid-row-start:5;grid-row-end: 6;
+grid-column-start:2 ;grid-column-end:3 ; }
+
+.operador-less  { grid-row-start:5;grid-row-end: 6;
+    grid-column-start:3 ;grid-column-end:4 ; }
+.erase  { grid-row-start:5;grid-row-end: 6;
+    grid-column-start:4 ;grid-column-end:5 ; }
+/* linha 6-7 */
+/* linha 7-8 */
+/* linha 8-9 */
+.operador-mult  { grid-row-start:9;grid-row-end:10;
+    grid-column-start:1 ;grid-column-end:2 ; }
+
+.operador-div  { grid-row-start:9;grid-row-end:10;
+    grid-column-start:2 ;grid-column-end:3 ; }
+
+.operador-div  { grid-row-start:9;grid-row-end:10;
+    grid-column-start:2 ;grid-column-end:3 ; }
+.porcent { grid-row-start:8; grid-row-end: 9;
+          grid-column-start:3 ;grid-column-end:4; } 
+.dot { grid-row-start:9;grid-row-end: 10;
+grid-column-start:3 ;grid-column-end:4; } 
+
+.equals { grid-row-start:8;grid-row-end: 10;
+grid-column-start:4 ;grid-column-end:5; background-color: rgb(40, 40, 126); color: white} 
